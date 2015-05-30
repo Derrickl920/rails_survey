@@ -1,0 +1,16 @@
+<form action='/survey/result' method='post'>
+	<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+Your Name: <input type='text' name='name'><br>
+Dojo Location: <select name='location'>
+				<option value='mv'>MV</option>
+				<option value='sj'>SJ</option>
+				<option value='seattle'>Seattle</option>
+				</select><br>
+Favoritie Language: <select name='language'>
+					<option value='js'>JS</option>
+					<option value='ruby'>RUBY</option>
+					<option value='php'>PHP</option>
+				</select><br>
+Comment (Optional): <textarea name='comment'></textarea><br>
+<input type='submit'>
+</form>
